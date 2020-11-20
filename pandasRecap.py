@@ -53,4 +53,17 @@ print(df)
 print('- - - - - - - - - - - - - - - - -')
 df3 = df.drop('P', axis = 1)
 print(df3)
+print('- - - - - - - - - - - - - - - - -')
+print('Accessing elements in dataframe')
+df3 = df
+df3 = df3['Y']
+print(df3)
+print('- - - - - - - - - - - - - - - - -')
+df4 = df
+df4 = df4.loc['a']
+print(df4)
+print('- - - - - - - - - - - - - - - - -')
+df5 = df
+df5 = df5.loc['a', 'Y']
+print(df5)
 print("----------------------------------")
