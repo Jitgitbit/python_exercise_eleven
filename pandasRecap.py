@@ -66,4 +66,25 @@ print('- - - - - - - - - - - - - - - - -')
 df5 = df
 df5 = df5.loc['a', 'Y']
 print(df5)
+print('- - - - - - - - - - - - - - - - -')
+print('Conditional accessing in dataframe: ')
+df6 = df
+df6 = df > 3
+print(df6)
+print('- - - - - - - - - - - - - - - - -')
+df7 = df
+df7 = df[df > 3]
+print(df7)
+print('- - - - - - - - - - - - - - - - -')
+df8 = df
+df8 = df[df['Y'] > 3]
+print(df8)
+print('- - - - - - - - - - - - - - - - -')
+df9 = df
+df9 = df[df['Y'] > 3][['W','X']]
+print(df9)
+print('- - - - - - - - - - - - - - - - -')
+df10 = df
+df10 = df[(df['W'] > 0) & (df['Z'] > 5)]
+print(df10)
 print("----------------------------------")
