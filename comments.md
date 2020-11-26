@@ -10,6 +10,8 @@ git push -u origin main
 
 pip install pandas
 pip install html5lib
+pip install lxml
+
 
 python3 pandasRecap.py
 and so on...
